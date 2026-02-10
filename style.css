@@ -1,0 +1,272 @@
+
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background: rgb(245, 245, 245);
+}
+.logo{
+    width: 90%;
+    height: auto;
+    float: right;
+}
+/* Navigation */
+nav{
+    padding: 10px;
+    top: 50px;
+}
+ul li{
+    display: inline;
+    text-align: center;
+    font-size: 17px;
+
+    margin: 15px;
+}
+ul li a{
+    color: grey;
+}
+ul li a:hover{
+    color: black;
+}
+li{
+    margin-left: 25px;
+}
+.active{
+    text-decoration: underline 1.5px black;
+    color: black;
+}
+
+/* Search Bar */
+#search-bar{
+    top: 50px;
+}
+
+.search-icon{
+    width: 5%;
+    height: auto;
+}
+
+.head-icons{
+    width: 35%;
+    height: auto;
+}
+.cart-icon{
+    width: 50%;
+    height: auto;
+}
+button{
+    padding: 10px;
+    width: 100%;
+    background: #333333;
+    color: white;
+    box-shadow: 2px 2px 2px grey;
+    text-align: center;
+    border-radius: 5px;
+}
+button:hover{
+    padding: 10px;
+    background: #505050;
+    color: white;
+    box-shadow: 2px 2px 2px grey;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Main */
+.ban-container{
+    position: relative;
+}
+.ban-container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 810px;
+    filter: brightness(85%);
+}
+.ban-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 10px;
+    margin-top: 10px;
+    width: 100px;
+    color: white;
+}
+.ban-container h1{
+    text-align: center;
+    position: absolute;
+    letter-spacing: 2px;
+    top: 30%;
+    left: 30%;
+    color: royalblue;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 3px 7px 5px royalblue;
+}
+
+
+.prod-contain{
+   left: 5%;
+}
+.prod-contain img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+}
+.prod-contain p, h4{
+    text-align: center;
+}
+/* Buttons */
+.center-btn{
+    margin: 5px 0px 5px 46%;
+    color: white;
+    width: 100px;
+}
+.email-btn{
+    width: 100px;
+    height: auto;
+    color: white;
+    margin: 10px;
+}
+.text-contain{
+    position: relative;
+    
+}
+.text-contain h1, h2, h3{
+    text-align: left;
+    padding: 15px;
+    line-height: 10px;
+}
+.text-contain p{
+    text-align: left;
+}
+.side-img{
+    width: 100%;
+    height: auto;
+}
+
+/* Test */
+.add-cart{
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    color: white;
+    left: 31%;
+}
+.center{
+    text-align: center;
+}
+/* Footer */
+.container ul{
+    text-align: center;
+}
+.container h3{
+    text-align: center;
+}
+#email{
+    width: 50%;
+    padding: 8px;
+}
+#sm-icons img{
+    margin-top: 26px;
+    padding: 10px;
+    float: right;
+    width: 10%;
+    height: auto;
+}
+
+.page-num{
+    text-align: center;
+    font-weight: bold;
+}
+.page-num ul li{
+    margin: 35px;
+}
+
+/* Collection */
+.collect-row{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.collect-row div a{
+    color: black;
+    text-decoration: none;
+}
+.collect-row img{
+   width: 100%;
+   height: auto;
+   padding: 15px;
+   border-radius: 17px;
+   transition: transform .4s;
+}
+
+.collect-row img:hover{
+    -ms-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+.con-icons img{
+    width: 10%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Policy */
+.policy-contain h4{
+    text-align: center;
+}
+.policy-contain h2, p{
+    text-align: left;
+}
+
+/* Media Query(Mobile View) */
+@media (min-width: 500px) and (max-width: 800px){
+    .logo{
+        width: 90%;
+        height: 80%;
+    }
+    nav{
+        text-align: center;
+    }
+    ul li{
+        display: block;
+        line-height: 40px;
+    }
+    #search-bar{
+        text-align: center  ;
+        padding: 20px;
+    }
+    #cart{
+        float: right;
+        padding: 35px;
+    }
+    
+    .center{
+        width: 50%;
+        height: auto;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
+    footer{
+        text-align: center;
+    }
+    #sm-icons{
+        text-align: center;
+    }
+    .page-num ul li{
+        display: inline;
+    }
+}
